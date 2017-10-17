@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<title>DiffViewer</title>
+	<style>
+		/* basic styles */
+		body {
+			font: 14px Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+		h1 {
+			margin: 15px auto;
+			text-align: center;
+		}
+		.diff-list {
+			border: 1px solid #aaa;
+			border-radius: 15px;
+			list-style: none;
+			overflow: hidden;
+			margin: 20px auto;
+			width: 80%;
+			padding: 0;
+		}
+		.diff-list li:first-child {
+			border-top: none;
+		}
+		.diff-list li {
+			border-top: 1px solid #aaa;
+			overflow: hidden;
+		}
+		.diff-list li:hover {
+			background: #fafafa;
+		}
+		.diff-list strong {
+			cursor: pointer;
+			display: block;
+			color: #00a;
+			padding: 10px;
+		}
+		.diff-list strong:before {
+			vertical-align: middle;
+			display: inline-block;
+			border: 5px solid #f00;
+			border-color: transparent transparent transparent #00a;
+			width: 0px;
+			height: 0px;
+			content: '';
+		}
+		.diff-list .warning strong {
+			color: #700;
+		}
+		.diff-list .warning strong:before {
+			border-color: transparent transparent transparent #700;
+		}
+		.diff-list .active.warning strong:before {
+			border-color: #700 transparent transparent;
+		}
+		.diff-list .active strong:before {
+			border-color: #00a transparent transparent;
+			margin: 3px 3px 0 -3px;
+		}
+		.diff-list pre {
+			display: block;
+			background: #fff;
+			padding: 0;
+			margin: 0;
+		}
+
+		/* highlighter styles */
+		.scroll-wrapper {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background: #fff;
+			overflow: auto;
+			padding: 10px;
+			width: 100%;
+		}
+		pre {
+			min-width: 100%;
+			float: left;
+		}
+		pre code.hljs {
+			min-width: 100%;
+			font-size: 14px;
+			line-height: 18px;
+			padding: 0;
+			margin: 0;
+			float: left;
+		}
+		.hljs .hljs-header,
+		.hljs .hljs-chunk,
+		.hljs .hljs-deletion,
+		.hljs .hljs-addition {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+		}
+
+		.hljs .hljs-header { background: #ff7; }
+		.hljs .hljs-chunk { color: #77f; }
+		.hljs .hljs-deletion { background: #fbb; }
+		.hljs .hljs-addition { background: #bfb; }
+	</style>
+	
+
+	
+	<script>
+		function initCollapse() {
+			// create heading
+			if(!document.querySelector('h1')) {
+				var pageHeading = document.createElement('h1');
+				pageHeading.innerHTML = 'Changelog';
+				document.body.insertBefore(pageHeading, document.body.childNodes[0]);
+			}
+
+			// accordion handler
+			var items = document.querySelectorAll('ul.diff-list li');
+			var addClickEventHandler = function(container, opener, drop) {
+				drop.style.display = 'none';
+
+				opener.onclick = function(e) {
+					e.preventDefault();
+					if(container.classList.contains('active')) {
+						container.classList.remove('active');
+						drop.style.display = 'none';
+					} else {
+						container.classList.add('active');
+						drop.style.display = 'block';
+					}
+				};
+			};
+			for(var i = 0, item, opener, drop; i < items.length; i++) {
+				item = items[i];
+				addClickEventHandler(item, item.querySelector('strong'), item.querySelector('div.scroll-wrapper'));
+			}
+		}
+		
+		document.addEventListener('DOMContentLoaded', initCollapse, false);
+	</script>
+<meta name="chromesniffer" id="chromesniffer_meta" content="{}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+<body><h1>Changelog</h1>
+	
+
+<ul class="diff-list"><li class=""><strong>css/main.css</strong><div class="scroll-wrapper" style="display: block;"><pre><code class="diff hljs"><span class="hljs-chunk">@@ -439,57 +439,57 @@</span>
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-black-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-black-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 900;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-light-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-light-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 300;</span>
+ 	font-style: normal;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-blackitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-blackitalic-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 900;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-lightitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-lightitalic-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 300;</span>
+ 	font-style: italic;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-bold-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-bold-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 700;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-medium-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-medium-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 500;</span>
+ 	font-style: normal;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-bolditalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-bolditalic-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 700;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-mediumitalic-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 500;</span>
+ 	font-style: italic;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-light-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-light-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 300;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-bold-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-bold-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 700;</span>
+ 	font-style: normal;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-lightitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-lightitalic-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 300;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-bolditalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-bolditalic-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 700;</span>
+ 	font-style: italic;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-medium-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-medium-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 500;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-black-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-black-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 900;</span>
+ 	font-style: normal;
+ }
+ 
+ @font-face {
+ 	font-family: "suisse";
+<span class="hljs-deletion">-	src: url("../fonts/suissebpintl-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-mediumitalic-webfont.woff") format("woff");</span>
+<span class="hljs-deletion">-	font-weight: 500;</span>
+<span class="hljs-addition">+	src: url("../fonts/suissebpintl-blackitalic-webfont.woff2") format("woff2"), url("../fonts/suissebpintl-blackitalic-webfont.woff") format("woff");</span>
+<span class="hljs-addition">+	font-weight: 900;</span>
+ 	font-style: italic;
+ }
+ 
+<span class="hljs-chunk">@@ -906,7 +906,6 @@</span>
+ #fancybox-loading div {
+ 	width: 44px;
+ 	height: 44px;
+<span class="hljs-deletion">-	background: url("../images/fancybox/fancybox_loading.gif") center center no-repeat;</span>
+ }
+ 
+ .fancybox-close {
+<span class="hljs-chunk">@@ -932,7 +931,6 @@</span>
+ 	height: 100%;
+ 	cursor: pointer;
+ 	text-decoration: none;
+<span class="hljs-deletion">-	background: transparent url("../images/fancybox/blank.gif"); /* helps IE */</span>
+ 	-webkit-tap-highlight-color: transparent;
+ 	z-index: 8040;
+ }
+<span class="hljs-chunk">@@ -1002,7 +1000,6 @@</span>
+ 	overflow: hidden;
+ 	display: none;
+ 	z-index: 8010;
+<span class="hljs-deletion">-	background: url("../images/fancybox/fancybox_overlay.png");</span>
+ }
+ 
+ .fancybox-overlay-fixed {</code></pre></div></li></ul><div class="button-holder"></div></body></html>
