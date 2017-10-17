@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/skrollr.min.js" defer></script>
+	<script type="text/javascript" src="js/skrollr.menu.min.js" defer></script>
 	<script type="text/javascript" src="js/plugins.js" defer></script>
 	<script type="text/javascript" src="js/jquery.main.js" defer></script>
 </head>
@@ -74,7 +75,9 @@
 						<div class="pagination">
 							<!-- pagination generated here -->
 						</div>
-						<span class="see-more">SCROLL TO SEE MORE ABOUT US <img src="images/arrow-bottom.svg" alt="Image Description"></span>
+						<span class="see-more">SCROLL TO SEE MORE ABOUT US
+							<a href="#section-1"><img src="images/arrow-bottom.svg" alt="Image Description"></a>
+						</span>
 						<div class="decor-top"></div>
 						<div class="decor-bottom"></div>
 					</div>
@@ -86,7 +89,11 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-left">
-										<h2 class="sticky">Why work with us?</h2>
+										<h2 class="sticky  parallax-elem" data-options='{
+											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
+											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
+											"1.8": " opacity: 0;"
+										}'>Why work with us?</h2>
 										<div class="decorated-text parallax-elem" data-options='{
 											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
 											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
@@ -132,9 +139,9 @@
 						<div class="slideset">
 							<div class="slide">
 								<div class="bg-stretch">
-									<span data-srcset="images/A.2.2.2_278.JPG 2x"></span>
-									<span data-srcset="images/A.2.2.2_278.JPG, images/A.2.2.2_278.JPG 2x" data-media="(min-width: 768px)"></span>
-									<span data-srcset="images/A.2.2.2_278.JPG, images/A.2.2.2_278.JPG 2x" data-media="(min-width: 1024px)"></span>
+									<video autoplay poster="" class="video-parallax" loop muted>
+										<source src="images/video.mp4" type="video/mp4">
+									</video>
 								</div>
 								<div class="text-holder">
 									<div class="container">
@@ -300,42 +307,8 @@
 						<div class="decor-bottom"></div>
 					</div>
 
-					<div class="parallax-area parallax-slide" id="section-3">
-						<div class="text-box with-parallax alter2">
-							<div class="parallax gray-mask win-height bg-stretch parallax-fixed" style="background: url(images/A.2.3.jpg);">
-								<!-- <img src="images/parallax-05-2x.jpg" alt="Image Description"> -->
-							</div>
-							<div class="container">
-								<div class="row">
-									<div class="col-left alter2">
-										<h2 class="sticky alter3">We pay within 7 day</h2>
-										<div class="decorated-text parallax-elem" data-options='{
-											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
-											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
-											"1": "transform: translate3d(0, -50vh, 0); opacity: 0;"
-										}'>
-											<span class="text-decor"></span>
-											<p>For all UK based first-use exclusive
-												content sales, we pay within 7 working
-												days of publication.</p>
-										</div>
-									</div>
-								</div>
-								<div class="row alter2">
-									<div class="col-right alter2 parallax-elem" data-options='{
-											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
-											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
-											"1": "transform: translate3d(0, -50vh, 0); opacity: 0;"
-										}'>
-										<p>For all non-exclusive content, we have
-											options for invoice-free payments and
-											operate on a monthly payment run.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="apply-area parallax-slide win-min-height">
+
+					<div class="apply-area parallax-slide win-min-height" id="form1">
 						<div class="container">
 							<form action="#" class="apply-form">
 								<fieldset>
@@ -407,9 +380,8 @@
 			<nav class="fixed-nav" data-page="Join" data-anchor-target="#footer" data-bottom-top="bottom: 0px;" data-bottom="bottom: 46px;">
 				<div class="block-title">
 					<ul class="titles">
-						<li class="active-title" data-anchor-target="#section-1" data-top data-top-bottom><span>Apply to Join Us</span></li>
-						<li data-anchor-target="#section-2" data-top data-top-bottom><span>Apply to Join Us</span></li>
-						<li data-anchor-target="#section-3" data-top data-top-bottom><span>Apply to Join Us</span></li>
+						<li class="active-title" data-anchor-target="#section-1" data-top data-top-bottom><span><a href="#form1" >Apply to Join Us</a></span></li>
+						<li data-anchor-target="#section-2" data-top data-top-bottom><span><a href="#form1">Apply to Join Us</a></span></li>
 					</ul>
 				</div>
 				<div class="nav-galery-mask">

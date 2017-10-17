@@ -513,3 +513,14 @@ $(document).ready(function() {
 	});
 
 });
+
+var s = skrollr.init(/*other stuff*/);
+
+//The options (second parameter) are all optional. The values shown are the default values.
+skrollr.menu.init(s, {
+	//skrollr will smoothly animate to the new position using `animateTo`.
+	animate: true,
+
+	//The easing function to use.
+	easing: 'sqrt'
+});

@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/skrollr.min.js" defer></script>
+	<script type="text/javascript" src="js/skrollr.menu.min.js" defer></script>
 	<script type="text/javascript" src="js/plugins.js" defer></script>
 	<script type="text/javascript" src="js/jquery.main.js" defer></script>
 </head>
@@ -134,7 +135,9 @@
 						<div class="pagination">
 							<!-- pagination generated here -->
 						</div>
-						<span class="see-more">SCROLL TO SEE MORE ABOUT US <img src="images/arrow-bottom.svg" alt="Image Description"></span>
+						<span class="see-more">SCROLL TO SEE MORE ABOUT US
+							<a href="#section-1"><img src="images/arrow-bottom.svg" alt="Image Description"></a>
+						</span>
 						<div class="decor-top"></div>
 						<div class="decor-bottom"></div>
 					</div>
@@ -150,7 +153,12 @@
 								<div class="container">
 									<div class="row alt">
 										<div class="col-left alt sticky">
-											<h2 class="alter2">We are a global content agency.</h2>
+											<h2 class="alter2 parallax-elem" data-options='{
+												"0": "opacity: 1; visibility: visible;",
+												"1": "opacity: 1; visibility: visible;",
+												"1.4": "opacity: 1; visibility: visible;",
+												"1.7": "opacity: 0; visibility: hidden;"
+											}'>We are a global content agency.</h2>
 											<div class="decorated-text parallax-elem" data-options='{
 												"0": "opacity: 1; visibility: visible;",
 												"1": "opacity: 1; visibility: visible;",
@@ -199,7 +207,11 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-left">
-										<h2 class="sticky">We are diligently professional.</h2>
+										<h2 class="sticky  parallax-elem" data-options='{
+											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
+											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
+											"1.8": " opacity: 0;"
+										}'>We are diligently professional.</h2>
 										<div class="decorated-text parallax-elem" data-options='{
 											"0": "transform: translate3d(0, 0, 0); opacity: 1;",
 											"0.6": "transform: translate3d(0, 0vh, 0); opacity: 1;",
@@ -387,7 +399,7 @@
 			<nav class="fixed-nav" data-page="About" data-anchor-target="#footer" data-bottom-top="bottom: 0px;" data-bottom="bottom: 46px;">
 				<div class="block-title">
 					<ul class="titles">
-						<li data-anchor-target="#section-1" data-top data-top-bottom><span>Get Publishers</span><span>Access</span></li>
+						<li data-anchor-target="#section-1" data-top data-top-bottom><span><a href="get-access.html">Get Publishers</a></span><span><a href="get-access.html">Access</a></span></li>
 						<li data-anchor-target="#section-2" data-top data-top-bottom><span>Join Our Team</span></li>
 						<li data-anchor-target="#section-3" data-top data-top-bottom><span>Contact Us</span></li>
 						<li data-anchor-target="#section-4" data-top data-top-bottom><span>Our Contact Info</span></li>

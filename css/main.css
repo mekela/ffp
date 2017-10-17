@@ -2815,6 +2815,9 @@ h2.alter3 {
 	height: auto;
 	background-size: cover;
 }
+.bg-stretch{
+	overflow: hidden;
+}
 .text-center{
 	text-align: center;
 }
@@ -3006,6 +3009,12 @@ h2.alter3 {
 	padding-bottom:40px;
 }
 
+body{
+	height: auto !important;
+}
+.titles li span a{
+	color: inherit;
+}
 
 
 
@@ -3425,6 +3434,7 @@ h2.alter3 {
 		height: auto !important;
 	}
 }
+
 
 
 @media (max-width: 767px) {
