@@ -3016,8 +3016,44 @@ body{
 	color: inherit;
 }
 
-
-
+.contact-data .two-cols a{
+	margin-bottom:0;
+	font-size:16px;
+}
+.contact-data .two-cols .title:nth-of-type(2){
+	margin-top:10px;
+	display: block;
+}
+.two-cols .col.germany{
+	background: url(../images/map-04.png) no-repeat;
+	background-position: 7% 19%;
+	background-size: 36%;
+}
+.two-cols .col.italy{
+	background: url(../images/map-08.png) no-repeat;
+	background-position: 7% 19%;
+	background-size: 36%;
+}
+.two-cols .col.australia{
+	background: url(../images/map-11.png) no-repeat;
+	background-position: 7% 29%;
+	background-size: 40%;
+}
+.two-cols .col.la{
+	background: url(../images/map-02-la.png) no-repeat;
+	background-position: 7% 29%;
+	background-size: 40%;
+}
+.two-cols .col.ny{
+	background: url(../images/map-02_ny.png) no-repeat;
+	background-position: 7% 29%;
+	background-size: 40%;
+}
+.two-cols .col.miami{
+	background: url(../images/map-02_miami.png) no-repeat;
+	background-position: 7% 29%;
+	background-size: 40%;
+}
 
 
 
