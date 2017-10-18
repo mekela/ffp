@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f95f42f7-44f7-48ac-8613-e498be5aef59" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-us.html" afterPath="$PROJECT_DIR$/contact-us.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get-access.html" afterPath="$PROJECT_DIR$/get-access.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/join-us.html" afterPath="$PROJECT_DIR$/join-us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.main.js" afterPath="$PROJECT_DIR$/js/jquery.main.js" />
     </list>
     <ignored path="ffp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact-us.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="409" column="242" selection-start-line="409" selection-start-column="242" selection-end-line="409" selection-end-column="242" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-us.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact-us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+            <state relative-caret-position="251">
+              <caret line="257" column="203" selection-start-line="257" selection-start-column="195" selection-end-line="257" selection-end-column="203" />
               <folding />
             </state>
           </provider>
@@ -37,8 +52,8 @@
       <file leaf-file-name="join-us.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/join-us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="78" column="112" selection-start-line="78" selection-start-column="112" selection-end-line="78" selection-end-column="112" />
+            <state relative-caret-position="183">
+              <caret line="390" column="182" selection-start-line="390" selection-start-column="174" selection-end-line="390" selection-end-column="182" />
               <folding />
             </state>
           </provider>
@@ -47,18 +62,18 @@
       <file leaf-file-name="get-access.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get-access.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="41" column="112" selection-start-line="41" selection-start-column="112" selection-end-line="41" selection-end-column="112" />
+            <state relative-caret-position="183">
+              <caret line="206" column="248" selection-start-line="206" selection-start-column="248" selection-end-line="206" selection-end-column="248" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="3042" column="37" selection-start-line="3042" selection-start-column="37" selection-end-line="3042" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="3015" column="21" selection-start-line="3015" selection-start-column="21" selection-end-line="3015" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -67,9 +82,33 @@
       <file leaf-file-name="plugins.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/plugins.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38585">
+            <state relative-caret-position="-38993">
               <caret line="491" column="68" selection-start-line="491" selection-start-column="65" selection-end-line="491" selection-end-column="68" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skrollr.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/skrollr.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="1" column="5493" selection-start-line="1" selection-start-column="5488" selection-end-line="1" selection-end-column="5493" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skrollr.menu.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/skrollr.menu.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="221" selection-start-line="1" selection-start-column="220" selection-end-line="1" selection-end-column="221" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,8 +116,8 @@
       <file leaf-file-name="jquery.main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="522" column="0" selection-start-line="522" selection-start-column="0" selection-end-line="522" selection-end-column="0" />
+            <state relative-caret-position="99">
+              <caret line="515" column="22" selection-start-line="515" selection-start-column="22" selection-end-line="515" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -94,11 +133,11 @@
       <list>
         <option value="$PROJECT_DIR$/email_en.html" />
         <option value="$PROJECT_DIR$/js/jquery.main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/contact-us.html" />
         <option value="$PROJECT_DIR$/join-us.html" />
         <option value="$PROJECT_DIR$/get-access.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/contact-us.html" />
       </list>
     </option>
   </component>
@@ -254,23 +293,23 @@
       <workItem from="1507634484823" duration="14306000" />
       <workItem from="1507748429270" duration="35244000" />
       <workItem from="1507974451135" duration="536000" />
-      <workItem from="1508230545886" duration="15329000" />
+      <workItem from="1508230545886" duration="22293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65415000" />
+    <option name="totallyTimeSpent" value="72379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -378,66 +417,78 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/email_en.html" />
-    <entry file="file://$PROJECT_DIR$/js/skrollr.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="92" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38585">
+        <state relative-caret-position="-38993">
           <caret line="491" column="68" selection-start-line="491" selection-start-column="65" selection-end-line="491" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/skrollr.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="1" column="5493" selection-start-line="1" selection-start-column="5488" selection-end-line="1" selection-end-column="5493" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/skrollr.menu.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="221" selection-start-line="1" selection-start-column="220" selection-end-line="1" selection-end-column="221" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="522" column="0" selection-start-line="522" selection-start-column="0" selection-end-line="522" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/join-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="78" column="112" selection-start-line="78" selection-start-column="112" selection-end-line="78" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get-access.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" column="112" selection-start-line="41" selection-start-column="112" selection-end-line="41" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="3042" column="37" selection-start-line="3042" selection-start-column="37" selection-end-line="3042" selection-end-column="37" />
+        <state relative-caret-position="99">
+          <caret line="515" column="22" selection-start-line="515" selection-start-column="22" selection-end-line="515" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+        <state relative-caret-position="251">
+          <caret line="257" column="203" selection-start-line="257" selection-start-column="195" selection-end-line="257" selection-end-column="203" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/join-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="390" column="182" selection-start-line="390" selection-start-column="174" selection-end-line="390" selection-end-column="182" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get-access.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="206" column="248" selection-start-line="206" selection-start-column="248" selection-end-line="206" selection-end-column="248" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="409" column="242" selection-start-line="409" selection-start-column="242" selection-end-line="409" selection-end-column="242" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="3015" column="21" selection-start-line="3015" selection-start-column="21" selection-end-line="3015" selection-end-column="21" />
           <folding />
         </state>
       </provider>

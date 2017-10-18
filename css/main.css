@@ -3012,6 +3012,10 @@ h2.alter3 {
 body{
 	height: auto !important;
 }
+.page-nav li.active a{
+	overflow: hidden;
+}
+
 .titles li span a{
 	color: inherit;
 }
@@ -3076,7 +3080,7 @@ body{
 
 @media (max-width: 1199px) {
 	.two-cols a.underlined {
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.countdown {
@@ -3108,6 +3112,9 @@ body{
 	.parallax {
 		height: 100% !important;
 		background-size: cover !important;
+	}
+	.two-cols .col:first-child{
+		border-right: none;
 	}
 }
 
