@@ -509,10 +509,19 @@ $(document).ready(function() {
 		$('.ways-list li em').removeClass('active');
 		$(this).addClass('active');
 		$('.ways-list__tab').hide();
-		$($(this).attr('data-href')).show();
+		$($(this).attr('data-hrefer')).show();
 	});
 
+	$('.preference-form nav em').click(function(){
+		$('.preference-form nav em').removeClass('active');
+		$(this).addClass('active');
+	});
+
+
+
 });
+
+
 
 //anchor links
 if (screen.width > 1200) {

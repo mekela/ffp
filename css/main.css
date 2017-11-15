@@ -2975,10 +2975,11 @@ h2.alter3 {
 		display: flex;
 		width:50%;
 	}
-	.preference-form nav a{
+	.preference-form nav em{
 		width: 50%;
 		box-sizing: border-box;
 		color: #2f2f2f;
+		cursor: pointer;
 		font-weight: 200;
 		font-size:14px;
 		font-style: normal;
@@ -2990,12 +2991,15 @@ h2.alter3 {
 		line-height:34px;
 		background: #191919;
 	}
-	.preference-form nav a.active{
+	.preference-form nav em:first-child{
+		border-right: none;
+	}
+	.preference-form nav em.active{
 		background: #f74848;
 		border-color: #f74848;
 		color: #fff;
 	}
-	.preference-form nav a.active + a{
+	.preference-form nav em.active + em{
 		border-left: none;
 	}
 	.apply-area small{
@@ -3131,7 +3135,7 @@ body{
 				left:12px;
 			}
 
-.gray-mask:before{
+.news_wrap.gray-mask:before{
 	display: none;
 }
 .video_icn{
