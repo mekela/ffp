@@ -542,6 +542,13 @@ th {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: "icomoon2";
+	src: url("../fonts/icomoon2.eot?3ze36r");
+	src: url("../fonts/icomoon2.eot?3ze36r#iefix") format("embedded-opentype"), url("../fonts/icomoon2.ttf") format("truetype"), url("../fonts/icomoon2.woff") format("woff"), url("../fonts/icomoon2.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -580,6 +587,7 @@ th {
 .icon-instagram:before {
 	content: "\e901";
 }
+.icon-linkedin:before { font-family: "icomoon2" !important; content: "\eaca"; }
 
 /* custom select styles */
 
@@ -1348,6 +1356,7 @@ input[type="submit"]:hover {
 	right: 0;
 	z-index: 100;
 	padding: 61px 0 0;
+	padding-top:40px;
 }
 
 #header .container {
@@ -1367,15 +1376,16 @@ input[type="submit"]:hover {
 
 .logo {
 	/*width: 272px;*/
-	width: 180px;
+	width: 200px;
 }
 
 .sign {
 	text-transform: uppercase;
 	background: #0f0f0f;
 	color: #fff;
-	padding: 5px 13px;
-	font: 500 13px/15px "suisse", "Helvetica Neue", "Helvetica", sans-serif;
+	/*padding: 5px 13px;*/
+	padding:10px 30px;
+	font: 500 15px/15px "suisse", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 .sign:hover {
@@ -2124,8 +2134,14 @@ h2.alter3 {
 .apply-area {
 	background: #0f0f0f;
 	padding: 132px 0 100px;
-}
 
+}
+	.apply-form .col:first-child, .apply-area .col:first-child{
+		padding-top:120px;
+	}
+	.apply-area .contact-data  .col:first-child{
+		padding-top:0;
+	}
 .apply-area .row {
 	overflow: hidden;
 }
@@ -3052,7 +3068,7 @@ body{
 .two-cols .col.australia{
 	background: url(../images/map-11.png) no-repeat;
 	background-position: 7% 29%;
-	background-size: 40%;
+	background-size: 34%;
 }
 .two-cols .col.la{
 	background: url(../images/map-02-la.png) no-repeat;
@@ -3069,6 +3085,97 @@ body{
 	background-position: 7% 29%;
 	background-size: 40%;
 }
+.two-cols .col{
+	position: relative;
+}
+.contact-data .two-cols .col{
+	background-image: none !important;
+}
+.contact-data div, .contact-data h3{
+	position: relative;
+	z-index:1;
+}
+.contact-data div.map{
+	position: absolute;
+	left:20px;
+	top:50px;
+	width:260px;
+	height:100%;
+	background: url("../images/bg-image03.png") no-repeat 0 0 ;
+	background-size:100% auto;
+	z-index:-1;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.5);
+		box-shadow: 0 0 2px #dc2138;
+	}
+	50%{
+		transform: scale(1.2);
+		box-shadow: 0 0 12px #dc2138;
+	}
+	100% {
+		transform: scale(0.5);
+		box-shadow: 0 0 2px #dc2138;
+	}
+}
+	.map span{
+		position: absolute;
+		width:7px;
+		height:7px;
+		background: #dc2138;
+		top: 108px;
+		left: 28px;
+		border-radius:50%;
+		animation: pulse 1s infinite;
+	}
+	.map.newy span{
+		top: 49px;
+		left: auto;
+		right: 25px;
+	}
+	.map.mia span{
+		left: auto;
+		top: 150px;
+		right: 33px;
+	}
+	.map.ld span{
+		top: 286px;
+		left: 178px;
+	}
+	.map.ger span{
+		top: 82px;
+		left: 168px;
+	}
+	.map.it span{
+		top: 33px;
+		left: 45px;
+	}
+	.map.au span{
+		top: 125px;
+		left: 179px;
+	}
+
+	.contact-data div.map.ld{
+		background-image: url(../images/bg-image02.png);
+		top:0;
+		background-size: 84% auto;
+	}
+	.contact-data div.map.ger{
+		background-image: url(../images/map-04.png);
+		top:24px;
+		background-size:80% auto;
+	}
+	.contact-data div.map.it{
+		background-image: url(../images/map-08.png);
+		top:24px;
+		background-size:80% auto;
+	}
+	.contact-data div.map.au{
+		background-image: url(../images/map-11.png);
+		top:56px;
+		background-size:80% auto;
+	}
 
 .tags_wrap{
 	min-height:1200px;
@@ -3153,7 +3260,14 @@ body{
 	position: absolute;
 	z-index:-1000;
 }
-
+.jcf-file .jcf-upload-button:after{
+	opacity:0;
+}
+.req-field{
+	margin-top:-40px;
+	margin-bottom:20px;
+	text-align: left;
+}
 
 
 
