@@ -3264,9 +3264,14 @@ body{
 	opacity:0;
 }
 .req-field{
-	margin-top:-40px;
+	margin-top:-20px;
 	margin-bottom:20px;
 	text-align: left;
+}
+.legalText__list{
+	padding:20px;
+	padding-top:0;
+	list-style: disc;
 }
 
 
